@@ -4,6 +4,59 @@
   <artifactId>onlineshopping</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  
+  <properties>
+  <javaee.version>8.0</javaee.version>
+  <spring.version>4.3.6.RELEASE</spring.version>
+		<spring.security.version>4.2.2.RELEASE</spring.security.version>
+		
+  </properties>
+  
+  
+  <dependencies>
+
+<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+<dependency>
+    <groupId>javax</groupId>
+    <artifactId>javaee-api</artifactId>
+    <version>${javaee.version}</version>
+    <scope>provided</scope>
+</dependency>
+
+
+
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			<!-- <exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions> -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- JSTL -->
+
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+
+ 
+  </dependencies>
+  
   <build>
     <resources>
       <resource>
